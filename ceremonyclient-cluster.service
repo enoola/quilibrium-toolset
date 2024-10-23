@@ -1,0 +1,15 @@
+[Unit]
+Description=Quilibrium Node Service (Cluster Mode)
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=50ms
+#User=<name of user>
+#Group=<name of user>
+# this WorkingDirectory is needed to find the .config directory
+WorkingDirectory=/root/ceremonyclient/node
+ExecStart=/root/start-cluster.sh --core-index-start 1 --data-worker-count 3
+
+[Install]
+WantedBy=multi-user.target
