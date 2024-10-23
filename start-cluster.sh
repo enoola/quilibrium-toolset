@@ -7,7 +7,7 @@ PARENT_PID=$$
 
 # Some variables for paths and binaries
 QUIL_NODE_PATH=/root/ceremonyclient/node
-NODE_BINARY=node-1.4.21.1-linux-amd64 # or whatever it is
+NODE_BINARY=node-2.0.0.8-linux-amd64 # or whatever it is
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do

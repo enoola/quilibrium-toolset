@@ -9,7 +9,7 @@ RestartSec=50ms
 #Group=<name of user>
 # this WorkingDirectory is needed to find the .config directory
 WorkingDirectory=/root/ceremonyclient/node
-ExecStart=/root/start-cluster.sh --core-index-start 1 --data-worker-count 3
+ExecStart=/root/start-cluster.sh --core-index-start 1 --data-worker-count 32
 
 [Install]
 WantedBy=multi-user.target
